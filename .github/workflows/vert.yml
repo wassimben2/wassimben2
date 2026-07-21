@@ -3,6 +3,7 @@ name: Profil Vert Auto
 on:
   schedule:
     - cron: '0 12 * * *'
+  workflow_dispatch: # <-- Regarde bien, aligné tout à gauche sous "schedule"
 
 jobs:
   auto-commit:
@@ -21,4 +22,4 @@ jobs:
           commit_user_name: 'wassimben2'     
           commit_user_email: 'wassimbennamane6@gmail.com' 
           commit_author: 'wassimben2 <wassimbennamane6@gmail.com>'
-          commit_message: 'update profile stats' 
+          commit_message: 'update profile stats'
