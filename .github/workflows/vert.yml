@@ -3,7 +3,7 @@ name: Profil Vert Auto
 on:
   schedule:
     - cron: '0 12 * * *'
-  workflow_dispatch: # <-- Regarde bien, aligné tout à gauche sous "schedule"
+  workflow_dispatch:
 
 jobs:
   auto-commit:
@@ -13,13 +13,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Modification invisible
-        run: echo "Update $(date)" >> activite.txt
-        
-      - name: Commit discret
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_user_name: 'wassimben2'     
-          commit_user_email: 'wassimbennamane6@gmail.com' 
-          commit_author: 'wassimben2 <wassimbennamane6@gmail.com>'
-          commit_message: 'update profile stats'
+      - name: Configuration de l'identité Git
+        run: |
+          git config --global user.name "wassimben2"
+          git config --global user.email "wassimbennamane6@gmail.com"
+      
+      - name: Premier Commit
+        run: |
+          echo "Update 1 $(date)" >> activite.txt
+          git add activite.txt
+          git commit -m "update profile stats"
+          
+      - name: Deuxième Commit
+        run: |
+          echo "Update 2 $(date)" >> activite.txt
+          git add activite.txt
+          git commit -m "update profile stats"
+          
+      - name: Troisième Commit
+        run: |
+          echo "Update 3 $(date)" >> activite.txt
+          git add activite.txt
+          git commit -m "update profile stats"
+
+      - name: Envoyer sur GitHub
+        run: git push origin main
