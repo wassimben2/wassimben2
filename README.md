@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="ton-lien-d-image.png" alt="Logo" width="400">
+
   
   <h3>Hi, my name's Wassim 👋</h3>
   <p>I'm a 3rd-year CS engineering student at <strong>USTHB Algiers</strong>.</p>
