@@ -2,6 +2,14 @@
   <img data-importer="image" height="200" src="https://i.pinimg.com/originals/b0/64/2c/b0642c034bcf83509f86ff1bc493d8aa.gif"  />
 </div>
 
+<div align="center">
+  <img src="ton-lien-d-image.png" alt="Logo" width="400">
+  
+  <h3>Hi, my name's Wassim 👋</h3>
+  <p>I'm a 3rd-year CS engineering student at <strong>USTHB Algiers</strong>.</p>
+  <p>I love building robust backends, designing scalable REST/GraphQL APIs, optimizing database performance, and exploring AI-driven systems to keep innovating.</p>
+</div>
+
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/wassssssim1) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/iieagb_) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/wassimbennamane) 
 
